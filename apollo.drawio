@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-11T17:41:46.188Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="txdZWtsdMPnO-oCbbMFj" version="19.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-11T17:44:44.251Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="p-wdwN-jenkU57bk5RJa" version="19.0.3" type="github" pages="2">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="segment">
     <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -189,6 +189,17 @@
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-91" value="" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#FF3333;" vertex="1" parent="1">
           <mxGeometry x="1003.5" y="-640.5" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="BuPBgejb54jkD7pTJm3I" name="待完成任务">
+    <mxGraphModel dx="528" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NsWBkP-mdBoUrU_0fpo0-1" value="&lt;h1&gt;20220612&lt;/h1&gt;&lt;p&gt;1.消息是如何被处理的，回调，若回调函数处理时间过长，会不会影响下一个消息的处理，需要梳理明白&lt;/p&gt;&lt;p&gt;1.是一个topic对应一个Notifier，还是说共用，而后续就是协程处理了&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=15;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="850" y="-1150" width="400" height="250" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
