@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2022-06-11T01:58:42.181Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="C5OiEkhUWt-T5r1uIWR1" version="19.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-11T02:47:59.912Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="hGB4UXERPUHlJSfffCY0" version="19.0.3" type="github">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="第 1 页">
-    <mxGraphModel dx="1355" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="iZyJBMPMjRF8nmw40MTH-2" value="Segment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="250" y="80" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iZyJBMPMjRF8nmw40MTH-4" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;segement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;该类是一个抽象类，定义了数据读写方法，但具体实现依赖于底层所使用的技术。包括打开，关闭，重置，销毁等接口&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry x="414" y="50" width="336" height="180" as="geometry" />
+        <mxCell id="iZyJBMPMjRF8nmw40MTH-4" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Segement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类是一个抽象类，定义了进程交互时，内存管理功能，包括读写时，从原始内存区，获取所需内存的接口及读写完毕时，释放内存接口。基于不同的进程交互方式时，会有不同的原始内存申请方式，申请后的内存，会统一放在blocks_里。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="414" y="7" width="336" height="226" as="geometry" />
         </mxCell>
         <mxCell id="iZyJBMPMjRF8nmw40MTH-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="iZyJBMPMjRF8nmw40MTH-5" target="iZyJBMPMjRF8nmw40MTH-2">
           <mxGeometry relative="1" as="geometry" />
@@ -16,8 +16,20 @@
         <mxCell id="iZyJBMPMjRF8nmw40MTH-5" value="PosixSegment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="70" y="320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="iZyJBMPMjRF8nmw40MTH-7" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PosixSegement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;该类实现了基于Posix共享内存的数据读写方法，该类对象可以被进程间通信所使用。该类继承于Segment，实现了打开，关闭，创建等方法。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry x="200" y="260" width="336" height="180" as="geometry" />
+        <mxCell id="iZyJBMPMjRF8nmw40MTH-7" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PosixSegement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类基于Posix共享内存通信实现了内存申请的功能。Posix共享内存能够让无关进程共享一个映射区域而无需创建相应的映射文件。类似于是创建文件，再打开文件，得到文件描述符，利用该文件描述符，通过mmap接口，映射到进程的虚拟地址空间中。&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="336" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="iZyJBMPMjRF8nmw40MTH-9" value="PosixSegment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="280" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iZyJBMPMjRF8nmw40MTH-11" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iZyJBMPMjRF8nmw40MTH-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="570" as="sourcePoint" />
+            <mxPoint x="50" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iZyJBMPMjRF8nmw40MTH-12" value="&lt;h1 style=&quot;font-size: 19px;&quot;&gt;managed_shm_&lt;/h1&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;managed_shm_&lt;/span&gt; = &lt;span style=&quot;color: #dcdcaa;&quot;&gt;mmap&lt;/span&gt;(&lt;span style=&quot;color: #569cd6;&quot;&gt;nullptr&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;conf_&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;managed_shm_size&lt;/span&gt;(), &lt;span style=&quot;color: #569cd6;&quot;&gt;PROT_READ&lt;/span&gt; | &lt;span style=&quot;color: #569cd6;&quot;&gt;PROT_WRITE&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;                      &lt;span style=&quot;color: #569cd6;&quot;&gt;MAP_SHARED&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;fd&lt;/span&gt;, &lt;span style=&quot;color: #b5cea8;&quot;&gt;0&lt;/span&gt;);&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="10" y="690" width="390" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
