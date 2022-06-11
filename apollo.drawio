@@ -1,20 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2022-06-11T16:58:19.297Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="r8ePYwQk1O2b-hgnUYco" version="19.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-11T17:31:23.797Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="a59Eg-Ujxj2A_1uNcKje" version="19.0.3" type="github">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="segment">
     <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-1" value="Segment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="504" y="-1018" width="120" height="60" as="geometry" />
+          <mxGeometry x="551" y="-988" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-4" target="EcqgWQ-e6KK3-O6DXlR8-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-4" value="PosixSegment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="324" y="-778" width="120" height="60" as="geometry" />
+          <mxGeometry x="371" y="-755" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-5" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PosixSegement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类基于Posix共享内存通信实现了内存申请的功能。Posix共享内存能够让无关进程共享一个映射区域而无需创建相应的映射文件。类似于是创建文件，再打开文件，得到文件描述符，利用该文件描述符，通过mmap接口，映射到进程的虚拟地址空间中。&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry x="454" y="-858" width="336" height="200" as="geometry" />
+          <mxGeometry x="501" y="-835" width="336" height="200" as="geometry" />
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-6" value="PosixSegment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="300" width="120" height="60" as="geometry" />
@@ -152,16 +152,16 @@
           <mxGeometry x="93" y="503" width="621" height="170" as="geometry" />
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-78" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Segement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类是一个抽象类，定义了进程交互时，内存管理功能，包括读写时，从原始内存区，获取所需内存的接口及读写完毕时，释放内存接口。基于不同的进程交互方式时，会有不同的原始内存申请方式，申请后的内存，会统一放在blocks_里。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry x="46" y="-1090" width="336" height="226" as="geometry" />
+          <mxGeometry x="93" y="-1067" width="336" height="226" as="geometry" />
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-79" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
-          <mxGeometry x="624" y="-1080" width="165" height="156.5" as="geometry" />
+          <mxGeometry x="671" y="-1060" width="165" height="210" as="geometry" />
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-80" value="方法分析" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
-          <mxGeometry x="632" y="-1019" width="60" height="30" as="geometry" />
+          <mxGeometry x="679" y="-996" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-81" value="&lt;h1&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;AcquireBlockToWrite&lt;/font&gt;&lt;/div&gt;&lt;/h1&gt;&lt;p&gt;该方法用于从BlockBuf集合中找到空闲Buf，用于上层调用进行数据写操作，同时会返回该BlockBuf所对应的Block对象，用于上层调用进行数据写操作时的锁操作。返回值是一个WritableBlock对象。&lt;/p&gt;&lt;p&gt;注意当需要被写的数据的内存大小大于单个块的大小，会报错，提示数据过大。&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
-          <mxGeometry x="792" y="-1159" width="449" height="159" as="geometry" />
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-81" value="&lt;h1&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;AcquireBlockToWrite/ReleaseWrittenBlock&lt;/font&gt;&lt;/div&gt;&lt;/h1&gt;&lt;p&gt;这两个方法是找到可写区域配套使用的，先调用前面的方法，判断哪个区域可进行写操作解锁，找到之后，就加锁，并返回该索引，后续就是对内存进行写操作，将数据拷贝到返回的地址，返回值是一个WritableBlock类型的数据。该数据内部包含了从BlockBuf集合中找到的空闲Buf，用于上层调用进行数据写操作，同时会返回该BlockBuf所对应的Block对象。&lt;/p&gt;&lt;p&gt;注意这个方法在判断哪个buf可用时，使用的评价方法是对应block是否可以获取写锁，如果可以，则对该区域进行写加锁&lt;/p&gt;&lt;p&gt;注意当需要被写的数据的内存大小大于单个块的大小，会报错，提示数据过大。&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="840" y="-1158" width="730" height="208" as="geometry" />
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-84" value="&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;WritableBlock&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;(即ReadableBlock)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=16;fontColor=#000033;" vertex="1" parent="1">
           <mxGeometry x="4" y="-268" width="140" height="60" as="geometry" />
@@ -178,8 +178,17 @@
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-87" value="该类总结：&lt;br&gt;1.ceiling_shm_size_限定了单个消息的最大大小;&lt;br&gt;2.block_num_限定了消息的数目;&lt;br&gt;3.ShmConf类特别的重要，该类配置的值，决定了从内存中获取内存的大小，对于内存比较紧张的硬件来说，可调整这个配置。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#000033;" vertex="1" parent="1">
           <mxGeometry x="78" y="1280" width="752" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-89" value="阅读源码，segment主要接口就是获取可用内存块的索引，并提供相应的内存同步工具，&lt;font color=&quot;#ff3333&quot;&gt;但在源码中也发现了如下问题&lt;/font&gt;：&lt;br&gt;1.在获取下一个可用索引时，" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#000033;" vertex="1" parent="1">
-          <mxGeometry x="78" y="-640" width="752" height="190" as="geometry" />
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-89" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;阅读源码，segment主要接口就是获取可用内存块的索引，并提供相应的内存同步工具，&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#ff3333&quot;&gt;但在源码中也发现了如下问题&lt;/font&gt;：&lt;br&gt;1.shmcof定义了统一的内存规格，正常来说，对于不同类型的数据，需要传递的数据大小其实是可以大概估计出来的，程序没有提供一种显示可配置的方法，即上层读写接口在创建的时候，可配置这个内存块的分块大小及数目；&lt;br&gt;2.在获取下一个空闲索引时，GetNextWritableBlockIndex这个接口内部使用了一个while循环，循环遍历可用内存，找到了可用内存就跳出，这对于读写缓冲队列的大小大于1的或者BlockBufSize大，而Block_Num小的来说，可能会导致需要多次while才能找到可用的索引，这引出了一个问题，&lt;/font&gt;&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#ff3333&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;什么时候内存失效&lt;/b&gt;&lt;br&gt;关于上述问题的回答：&lt;br&gt;&lt;/font&gt;1.Writer每次在写数据时，会依据BlockNum的大小，从0到BlockNum依据索引值的顺序来进行写加锁；&lt;br&gt;内存进行操作时，写是从前往后移动的，当&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="125" y="-617" width="752" height="237" as="geometry" />
+        </mxCell>
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-92" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#FF3333;" edge="1" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-90" target="EcqgWQ-e6KK3-O6DXlR8-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-90" value="&lt;h1&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;AcquireBlockToRead/&lt;/span&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ReleaseReadBlock&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 14px; font-weight: 400;&quot;&gt;这两个方法是找到可读区域配套使用的，在进行读操作时，调用前面的方法给读加锁，读取完毕之后，释放调该锁。&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="839" y="-929" width="449" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-91" value="" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="1003.5" y="-640.5" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
