@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-11T15:34:23.107Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="AhuTmvn2yGW0y1m-Nlfr" version="19.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-11T15:40:35.860Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="DniCets3RsGAktHwgf5R" version="19.0.3" type="github">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="segment">
     <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -150,6 +150,9 @@
         </mxCell>
         <mxCell id="EcqgWQ-e6KK3-O6DXlR8-73" value="managed_shm_共享内存布局" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
           <mxGeometry x="320" y="-210" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-74" value="通过mmap将文件映射到进程空间后，从内存中获取了一块内存，该块内存的大小就是ShmConf配置的内存大小，即managed_shm_size_的大小。mmap的返回值就是这块内存的首地址。拿到这个首地址后，就对这块内存利用placement new进行了部分内存初始化。（注意对已分配内存进行初始化操作，使用placement new）。&lt;br&gt;分别进行了如下初始化：&lt;br&gt;1.初始化了一个state对象，该对象用于描述整个共享内存被引用的次数;&lt;br&gt;2.按照blockNum，初始化了blockNum个Block对象，" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="139" y="-180" width="621" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
