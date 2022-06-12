@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-12T14:31:28.526Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="q43hKYYjaFi6EtROt6pF" version="20.0.0" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-06-12T14:39:43.284Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="xZK3lBnYTPt6Z4l6Q5Je" version="20.0.0" type="github" pages="6">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -373,7 +373,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-1" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;数据采集模块&lt;br style=&quot;&quot;&gt;1.车端软件与自动驾驶软件基于cyber架构进行通信，使用protobuf作为数据传输格式。车端软件依据云端需要上报的信息订阅相应的Topic，每个topic都会有相对应的protobuf格式。为了统一接口，在订阅topic时，统一使用rawmessage，在收到数据后，再依据topic名，将rawmessage转换为对应protobuf对象；&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;2.topic对应的protobuf会包含很多数据，比喻&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;FLAGS_chassis_topic，该topic对应的是底盘数据chassis，里面会包含整个底盘数据的信息，所以需过滤掉无用数据，再存储到数据缓冲队列中；&lt;br&gt;&lt;br&gt;3.程序使用ini配置文件来配置需要提取的数据，后续修改需要获取的数据，只需要修改该配置文件，而不用修改代码&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;font color=&quot;#ff3333&quot;&gt;补充云端需要车端上报哪些数据的图&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-1" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;数据采集模块&lt;br style=&quot;&quot;&gt;1.车端软件与自动驾驶软件基于cyber架构进行通信，使用protobuf作为数据传输格式。车端软件依据云端需要上报的信息订阅相应的Topic，每个topic都会有相对应的protobuf格式。为了统一接口，在订阅topic时，统一使用rawmessage，在收到数据后，再依据topic名，将rawmessage转换为对应protobuf对象；&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;2.topic对应的protobuf会包含很多数据，比喻&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;FLAGS_chassis_topic，该topic对应的是底盘数据chassis，里面会包含整个底盘数据的信息，所以需过滤掉无用数据，再存储到数据缓冲队列中；&lt;br&gt;&lt;br&gt;3.程序使用ini配置文件来配置需要提取的数据，后续修改需要获取的数据，只需要修改该配置文件，而不用修改代码&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;font color=&quot;#ff3333&quot;&gt;补充云端需要车端上报哪些数据的图及一个总图，描述整个系统的结构的图&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="31" width="920" height="159" as="geometry" />
         </mxCell>
         <mxCell id="QCAaNkC9AgMrjsYHkS20-2" value="Reader节点" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -409,7 +409,7 @@
           <mxGeometry x="240" y="320" width="400" height="210" as="geometry" />
         </mxCell>
         <mxCell id="QCAaNkC9AgMrjsYHkS20-17" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;数据上报模块&lt;br style=&quot;&quot;&gt;1.使用Mqtt与云端进行通信；&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;2.&lt;/font&gt;&lt;/span&gt;将数据采集模块采集到的数据，按照云端上报要求，打包成相应的Json格式；&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;3.自动驾驶系统产生数据的时间间隔一般是10ms，而若按照这个频率上报，会导致很多无用数据。依据云端上报要求，对于监控类数据，则一秒钟上报三个，而对于状态类数据，发生了变化则立马上报；按照这个要求，对数据发送进行相应的操作；&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="41" y="560" width="920" height="370" as="geometry" />
+          <mxGeometry x="41" y="560" width="920" height="130" as="geometry" />
         </mxCell>
         <mxCell id="QCAaNkC9AgMrjsYHkS20-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="1" source="QCAaNkC9AgMrjsYHkS20-18" target="QCAaNkC9AgMrjsYHkS20-22">
           <mxGeometry relative="1" as="geometry" />
@@ -445,6 +445,27 @@
         </mxCell>
         <mxCell id="QCAaNkC9AgMrjsYHkS20-35" value="判断状态是否发生变化，若变化，则上报数据" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="720" y="835" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;数据接收模块&lt;br&gt;&lt;br&gt;1.该模块区分于数据采集模块，该模块用来接收云端下发的指令和其他模块数据；&lt;br&gt;&lt;br&gt;2.定义数据转发模块与自动驾驶系统交互proto及topic，将接收到的json数据转换成对应proto，并发送出去，自动驾驶系统订阅了该topic后就能收到该数据；&lt;br&gt;&lt;br&gt;3 .目前程序已经实现的指令包括启动，停止，装载，卸载，其他模块数据包括直角检测及铁轨信号&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="930" width="920" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-39" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1050" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-40" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1130" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-41" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1230" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-43" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1050" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-44" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1130" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-45" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1230" width="120" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
