@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-12T12:35:40.926Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="iCr-OrmNBVoNMnwTGgcF" version="19.0.3" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-06-12T12:52:58.961Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="DKabjm1lyv-PHBI5Q1Dd" version="19.0.3" type="github" pages="5">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -346,6 +346,14 @@
         <mxCell id="Hc_WIR2-KDpjbdaBujBN-6" value="承接上面的文字&lt;br&gt;1.从这可以看出，完成了消息的读取之后，注意这个读取是消息分发器读取。完成读取之后，会调用该channel_id关联的ListenerHandler，这些ListenerHandler都存储在msg_listeners_里，msg_listener_是一个map。ListenerHandler使用到了信号槽机制。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
           <mxGeometry x="600" y="530" width="590" height="110" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="gxLHigO050jun1_bPMUN" name="信号槽机制">
+    <mxGraphModel dx="1355" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
