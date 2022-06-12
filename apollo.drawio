@@ -1,194 +1,188 @@
-<mxfile host="app.diagrams.net" modified="2022-06-11T17:45:09.486Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="ffn1PkfxMxB4zPUar5Bk" version="19.0.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-06-12T00:35:24.954Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="ZeVFqZRFgTiI8yV6NZeC" version="19.0.3" type="github" pages="2">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="segment">
     <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-1" value="Segment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-1" value="Segment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="551" y="-988" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-4" target="EcqgWQ-e6KK3-O6DXlR8-1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=14;" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-4" target="EcqgWQ-e6KK3-O6DXlR8-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-4" value="PosixSegment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-4" value="PosixSegment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="371" y="-755" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-5" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PosixSegement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类基于Posix共享内存通信实现了内存申请的功能。Posix共享内存能够让无关进程共享一个映射区域而无需创建相应的映射文件。类似于是创建文件，再打开文件，得到文件描述符，利用该文件描述符，通过mmap接口，映射到进程的虚拟地址空间中。&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-5" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PosixSegement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类基于Posix共享内存通信实现了内存申请的功能。Posix共享内存能够让无关进程共享一个映射区域而无需创建相应的映射文件。类似于是创建文件，再打开文件，得到文件描述符，利用该文件描述符，通过mmap接口，映射到进程的虚拟地址空间中。&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" parent="1" vertex="1">
           <mxGeometry x="501" y="-835" width="336" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-6" value="PosixSegment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-6" value="PosixSegment" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="300" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-7" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-6">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-7" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="180" y="90" as="sourcePoint" />
             <mxPoint x="70" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-8" value="&lt;h1 style=&quot;font-size: 19px;&quot;&gt;managed_shm_&lt;/h1&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;managed_shm_&lt;/span&gt; = &lt;span style=&quot;color: #dcdcaa;&quot;&gt;mmap&lt;/span&gt;(&lt;span style=&quot;color: #569cd6;&quot;&gt;nullptr&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;conf_&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;managed_shm_size&lt;/span&gt;(), &lt;span style=&quot;color: #569cd6;&quot;&gt;PROT_READ&lt;/span&gt; | &lt;span style=&quot;color: #569cd6;&quot;&gt;PROT_WRITE&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;                      &lt;span style=&quot;color: #569cd6;&quot;&gt;MAP_SHARED&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;fd&lt;/span&gt;, &lt;span style=&quot;color: #b5cea8;&quot;&gt;0&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;//调用mmap后，返回映射到内存中区域的首地址，注意fd特别重要，通过这个文件来申请内存。&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-8" value="&lt;h1 style=&quot;font-size: 19px;&quot;&gt;managed_shm_&lt;/h1&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;managed_shm_&lt;/span&gt; = &lt;span style=&quot;color: #dcdcaa;&quot;&gt;mmap&lt;/span&gt;(&lt;span style=&quot;color: #569cd6;&quot;&gt;nullptr&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;conf_&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;managed_shm_size&lt;/span&gt;(), &lt;span style=&quot;color: #569cd6;&quot;&gt;PROT_READ&lt;/span&gt; | &lt;span style=&quot;color: #569cd6;&quot;&gt;PROT_WRITE&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;                      &lt;span style=&quot;color: #569cd6;&quot;&gt;MAP_SHARED&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;fd&lt;/span&gt;, &lt;span style=&quot;color: #b5cea8;&quot;&gt;0&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;//调用mmap后，返回映射到内存中区域的首地址，注意fd特别重要，通过这个文件来申请内存。&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" parent="1" vertex="1">
           <mxGeometry x="30" y="210" width="390" height="136" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-9" value="ShmConf" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-9" value="ShmConf" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="280" y="819" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-10" value="&lt;h1 style=&quot;font-size: 18px;&quot;&gt;ShmConf&lt;/h1&gt;&lt;p style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类描述了通过posix共享内存所申请到的内存，如何进行配置，该类定义了很多常量，用于配置不同大小的共享内存。有定义如下四个成员：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;/font&gt;&lt;/p&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint64_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;ceiling_msg_size_&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint64_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;block_buf_size_&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint32_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;block_num_&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint64_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;managed_shm_size_&lt;/span&gt;;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-10" value="&lt;h1 style=&quot;font-size: 18px;&quot;&gt;ShmConf&lt;/h1&gt;&lt;p style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类描述了通过posix共享内存所申请到的内存，如何进行配置，该类定义了很多常量，用于配置不同大小的共享内存。有定义如下四个成员：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;/font&gt;&lt;/p&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint64_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;ceiling_msg_size_&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint64_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;block_buf_size_&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint32_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;block_num_&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint64_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;managed_shm_size_&lt;/span&gt;;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="460" y="789" width="350" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-12" value="&lt;h1 style=&quot;font-size: 19px;&quot;&gt;managed_shm_size_&lt;/h1&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;描述了最大的所需共享内存，在打开了文件后，会调用ftruncate截断文件，截断大小即managed_shm_size_。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=19;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-12" value="&lt;h1 style=&quot;font-size: 19px;&quot;&gt;managed_shm_size_&lt;/h1&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;描述了最大的所需共享内存，在打开了文件后，会调用ftruncate截断文件，截断大小即managed_shm_size_。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=19;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="30" y="1019" width="270" height="116" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-15" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#000033;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-9" target="EcqgWQ-e6KK3-O6DXlR8-12">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-15" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#000033;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-9" target="EcqgWQ-e6KK3-O6DXlR8-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="250" y="1023" as="sourcePoint" />
             <mxPoint x="140" y="1073" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-16" value="&lt;h1 style=&quot;font-size: 19px;&quot;&gt;ceiling_shm_size_&lt;/h1&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;描述单个ceil块的大小，&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=19;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-16" value="&lt;h1 style=&quot;font-size: 19px;&quot;&gt;ceiling_shm_size_&lt;/h1&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;描述单个ceil块的大小，&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=19;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="220" y="1189" width="270" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-17" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#000033;exitX=0.433;exitY=1.067;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-9">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-17" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#000033;exitX=0.433;exitY=1.067;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="385" y="1109" as="sourcePoint" />
             <mxPoint x="335" y="1189" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-18" value="&lt;h1 style=&quot;font-size: 19px;&quot;&gt;block_buf_size_及block_num_&lt;/h1&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;描述单个block的大小，它相比ceiling_shm_size，多了一个MESSAGE_INFO_SIZE&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;block_num_描述了有多少个block&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=19;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-18" value="&lt;h1 style=&quot;font-size: 19px;&quot;&gt;block_buf_size_及block_num_&lt;/h1&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;描述单个block的大小，它相比ceiling_shm_size，多了一个MESSAGE_INFO_SIZE&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;block_num_描述了有多少个block&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=19;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="410" y="1110" width="390" height="139" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-19" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#000033;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="EcqgWQ-e6KK3-O6DXlR8-18">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-19" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#000033;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="EcqgWQ-e6KK3-O6DXlR8-18" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="330" y="879" as="sourcePoint" />
             <mxPoint x="390" y="959" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-55" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-55" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="93" y="397" width="620" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-56" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-56" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="141" y="399" as="sourcePoint" />
             <mxPoint x="141" y="454" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-57" value="State" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-57" value="State" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="98" y="412" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-58" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-58" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="194" y="398" as="sourcePoint" />
             <mxPoint x="194" y="453" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-59" value="Block1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-59" value="Block1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="146" y="414" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-60" value="Block2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-60" value="Block2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="200" y="414" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-61" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-61" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="248" y="398" as="sourcePoint" />
             <mxPoint x="248" y="453" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-62" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-62" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="253" y="429.5" as="sourcePoint" />
             <mxPoint x="323" y="429.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-63" value="BlockN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-63" value="BlockN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="335" y="415" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-64" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-64" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="331" y="399" as="sourcePoint" />
             <mxPoint x="331" y="454" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-65" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-65" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="380" y="400" as="sourcePoint" />
             <mxPoint x="380" y="455" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-66" value="BlockBuf1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-66" value="BlockBuf1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="406" y="414" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-67" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-67" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="471" y="400" as="sourcePoint" />
             <mxPoint x="471" y="455" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-68" value="BlockBuf2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-68" value="BlockBuf2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="497" y="414" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-69" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-69" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="556" y="399" as="sourcePoint" />
             <mxPoint x="556" y="454" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-70" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-70" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="567" y="429.5" as="sourcePoint" />
             <mxPoint x="637" y="429.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-71" value="BlockBufN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-71" value="BlockBufN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="653" y="412" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-72" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" edge="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-72" value="" style="endArrow=none;html=1;rounded=0;fontSize=14;fontColor=#000033;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="632" y="399" as="sourcePoint" />
             <mxPoint x="632" y="454" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-73" value="managed_shm_共享内存布局" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-73" value="managed_shm_共享内存布局" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="274" y="468" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-74" value="通过mmap将文件映射到进程空间后，从内存中获取了一块内存，该块内存的大小就是ShmConf配置的内存大小，即managed_shm_size_的大小。mmap的返回值就是这块内存的首地址。拿到这个首地址后，就对这块内存利用placement new进行了部分内存初始化。（注意对已分配内存进行初始化操作，使用placement new）。&lt;br&gt;分别进行了如下初始化：&lt;br&gt;1.初始化了一个state对象，该对象用于管理当前被使用到的内存块的索引;&lt;br&gt;2.依据blockNum的大小，初始化了blockNum个Block对象，每个Block对象类似于是一个锁，可用于对应BlockBuf的读写操作，确保线程安全;&lt;br&gt;3.依据blockNum的大小，初始化了blockNum块内存，每块内存的大小为block_buf_size，每块内存的序号值和该块内存对应的首地址，一起存储在了segment的block_buf_addrs_里。&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-74" value="通过mmap将文件映射到进程空间后，从内存中获取了一块内存，该块内存的大小就是ShmConf配置的内存大小，即managed_shm_size_的大小。mmap的返回值就是这块内存的首地址。拿到这个首地址后，就对这块内存利用placement new进行了部分内存初始化。（注意对已分配内存进行初始化操作，使用placement new）。&lt;br&gt;分别进行了如下初始化：&lt;br&gt;1.初始化了一个state对象，该对象用于管理当前被使用到的内存块的索引;&lt;br&gt;2.依据blockNum的大小，初始化了blockNum个Block对象，每个Block对象类似于是一个锁，可用于对应BlockBuf的读写操作，确保线程安全;&lt;br&gt;3.依据blockNum的大小，初始化了blockNum块内存，每块内存的大小为block_buf_size，每块内存的序号值和该块内存对应的首地址，一起存储在了segment的block_buf_addrs_里。&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="93" y="503" width="621" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-78" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Segement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类是一个抽象类，定义了进程交互时，内存管理功能，包括读写时，从原始内存区，获取所需内存的接口及读写完毕时，释放内存接口。基于不同的进程交互方式时，会有不同的原始内存申请方式，申请后的内存，会统一放在blocks_里。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-78" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Segement类说明&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;该类是一个抽象类，定义了进程交互时，内存管理功能，包括读写时，从原始内存区，获取所需内存的接口及读写完毕时，释放内存接口。基于不同的进程交互方式时，会有不同的原始内存申请方式，申请后的内存，会统一放在blocks_里。&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=19;" parent="1" vertex="1">
           <mxGeometry x="93" y="-1067" width="336" height="226" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-79" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-79" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="671" y="-1060" width="165" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-80" value="方法分析" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-80" value="方法分析" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="679" y="-996" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-81" value="&lt;h1&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;AcquireBlockToWrite/ReleaseWrittenBlock&lt;/font&gt;&lt;/div&gt;&lt;/h1&gt;&lt;p&gt;这两个方法是找到可写区域配套使用的，先调用前面的方法，判断哪个区域可进行写操作解锁，找到之后，就加锁，并返回该索引，后续就是对内存进行写操作，将数据拷贝到返回的地址，返回值是一个WritableBlock类型的数据。该数据内部包含了从BlockBuf集合中找到的空闲Buf，用于上层调用进行数据写操作，同时会返回该BlockBuf所对应的Block对象。&lt;/p&gt;&lt;p&gt;注意这个方法在判断哪个buf可用时，使用的评价方法是对应block是否可以获取写锁，如果可以，则对该区域进行写加锁&lt;/p&gt;&lt;p&gt;注意当需要被写的数据的内存大小大于单个块的大小，会报错，提示数据过大。&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-81" value="&lt;h1&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;AcquireBlockToWrite/ReleaseWrittenBlock&lt;/font&gt;&lt;/div&gt;&lt;/h1&gt;&lt;p&gt;这两个方法是找到可写区域配套使用的，先调用前面的方法，判断哪个区域可进行写操作解锁，找到之后，就加锁，并返回该索引，后续就是对内存进行写操作，将数据拷贝到返回的地址，返回值是一个WritableBlock类型的数据。该数据内部包含了从BlockBuf集合中找到的空闲Buf，用于上层调用进行数据写操作，同时会返回该BlockBuf所对应的Block对象。&lt;/p&gt;&lt;p&gt;注意这个方法在判断哪个buf可用时，使用的评价方法是对应block是否可以获取写锁，如果可以，则对该区域进行写加锁&lt;/p&gt;&lt;p&gt;注意当需要被写的数据的内存大小大于单个块的大小，会报错，提示数据过大。&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="840" y="-1158" width="730" height="208" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-84" value="&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;WritableBlock&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;(即ReadableBlock)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=16;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-84" value="&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;WritableBlock&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;(即ReadableBlock)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=16;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="80" y="-198" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-85" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;说明&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;成员如下：&lt;/p&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30);&quot;&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint32_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;index&lt;/span&gt; = &lt;span style=&quot;color: #b5cea8;&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30);&quot;&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;Block&lt;/span&gt;* &lt;span style=&quot;color: #9cdcfe;&quot;&gt;block&lt;/span&gt; = &lt;span style=&quot;color: #569cd6;&quot;&gt;nullptr&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30);&quot;&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint8_t&lt;/span&gt;* &lt;span style=&quot;color: #9cdcfe;&quot;&gt;buf&lt;/span&gt; = &lt;span style=&quot;color: #569cd6;&quot;&gt;nullptr&lt;/span&gt;;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;index描述的是索引，即该是BlockBuf中哪一个&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;block即用于读写同步操作的锁&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;buf则是实际的数据地址&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;fontSize=16;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-85" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;说明&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;成员如下：&lt;/p&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30);&quot;&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint32_t&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;index&lt;/span&gt; = &lt;span style=&quot;color: #b5cea8;&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30);&quot;&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;Block&lt;/span&gt;* &lt;span style=&quot;color: #9cdcfe;&quot;&gt;block&lt;/span&gt; = &lt;span style=&quot;color: #569cd6;&quot;&gt;nullptr&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30);&quot;&gt;  &lt;span style=&quot;color: #4ec9b0;&quot;&gt;uint8_t&lt;/span&gt;* &lt;span style=&quot;color: #9cdcfe;&quot;&gt;buf&lt;/span&gt; = &lt;span style=&quot;color: #569cd6;&quot;&gt;nullptr&lt;/span&gt;;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;index描述的是索引，即该是BlockBuf中哪一个&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;block即用于读写同步操作的锁&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;buf则是实际的数据地址&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;fontSize=16;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="334" y="-290" width="506" height="245" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-86" value="" style="endArrow=none;html=1;rounded=0;fontSize=16;fontColor=#000033;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-84" target="EcqgWQ-e6KK3-O6DXlR8-85">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-86" value="" style="endArrow=none;html=1;rounded=0;fontSize=16;fontColor=#000033;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-84" target="EcqgWQ-e6KK3-O6DXlR8-85" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="240" y="-143" as="sourcePoint" />
             <mxPoint x="290" y="-193" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-87" value="该类总结：&lt;br&gt;1.ceiling_shm_size_限定了单个消息的最大大小;&lt;br&gt;2.block_num_限定了消息的数目;&lt;br&gt;3.ShmConf类特别的重要，该类配置的值，决定了从内存中获取内存的大小，对于内存比较紧张的硬件来说，可调整这个配置。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-87" value="该类总结：&lt;br&gt;1.ceiling_shm_size_限定了单个消息的最大大小;&lt;br&gt;2.block_num_限定了消息的数目;&lt;br&gt;3.ShmConf类特别的重要，该类配置的值，决定了从内存中获取内存的大小，对于内存比较紧张的硬件来说，可调整这个配置。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="78" y="1280" width="752" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-89" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;阅读源码，segment主要接口就是获取可用内存块的索引，并提供相应的内存同步工具，&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#ff3333&quot;&gt;但在源码中也发现了如下问题&lt;/font&gt;：&lt;br&gt;1.shmcof定义了统一的内存规格，正常来说，对于不同类型的数据，需要传递的数据大小其实是可以大概估计出来的，程序没有提供一种显示可配置的方法，即上层读写接口在创建的时候，可配置这个内存块的分块大小及数目；&lt;br&gt;2.在获取下一个空闲索引时，GetNextWritableBlockIndex这个接口内部使用了一个while循环，循环遍历可用内存，找到了可用内存就跳出，这对于读写缓冲队列的大小大于1的或者BlockBufSize大，而Block_Num小的来说，可能会导致需要多次while才能找到可用的索引，这引出了一个问题，&lt;/font&gt;&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#ff3333&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;什么时候内存失效&lt;/b&gt;&lt;br&gt;关于上述问题的回答：&lt;br&gt;&lt;/font&gt;1.Writer每次在写数据时，会依据BlockNum的大小，从开始索引(初始是0，别的时候是上次获取的索引的下一个)，每写完一次数据，索引加1。写数据的时候是索引单方向增长，最大后就归0，当写完数据，释放掉写锁后，会调用Udp多播通知，将之前写完数据的索引发送出去。所以在apollo内部是一种覆盖式的写法，假如没有及时读取数据，可能就会被写覆盖。&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-89" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;阅读源码，segment主要接口就是获取可用内存块的索引，并提供相应的内存同步工具，&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#ff3333&quot;&gt;但在源码中也发现了如下问题&lt;/font&gt;：&lt;br&gt;1.shmcof定义了统一的内存规格，正常来说，对于不同类型的数据，需要传递的数据大小其实是可以大概估计出来的，程序没有提供一种显示可配置的方法，即上层读写接口在创建的时候，可配置这个内存块的分块大小及数目；&lt;br&gt;2.在获取下一个空闲索引时，GetNextWritableBlockIndex这个接口内部使用了一个while循环，循环遍历可用内存，找到了可用内存就跳出，这对于读写缓冲队列的大小大于1的或者BlockBufSize大，而Block_Num小的来说，可能会导致需要多次while才能找到可用的索引，这引出了一个问题，&lt;/font&gt;&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#ff3333&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;什么时候内存失效&lt;/b&gt;&lt;br&gt;关于上述问题的回答：&lt;br&gt;&lt;/font&gt;1.Writer每次在写数据时，会依据BlockNum的大小，从开始索引(初始是0，别的时候是上次获取的索引的下一个)，每写完一次数据，索引加1。写数据的时候是索引单方向增长，最大后就归0，当写完数据，释放掉写锁后，会调用Udp多播通知，将之前写完数据的索引发送出去。所以在apollo内部是一种覆盖式的写法，假如没有及时读取数据，可能就会被写覆盖。&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="125" y="-617" width="752" height="267" as="geometry" />
         </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-92" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;fontColor=#FF3333;" edge="1" parent="1" source="EcqgWQ-e6KK3-O6DXlR8-90" target="EcqgWQ-e6KK3-O6DXlR8-91">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-90" value="&lt;h1&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;AcquireBlockToRead/&lt;/span&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ReleaseReadBlock&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 14px; font-weight: 400;&quot;&gt;这两个方法是找到可读区域配套使用的，在进行读操作时，调用前面的方法给读加锁，读取完毕之后，释放调该锁。&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" vertex="1" parent="1">
+        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-90" value="&lt;h1&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;AcquireBlockToRead/&lt;/span&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ReleaseReadBlock&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; line-height: 19px;&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 14px; font-weight: 400;&quot;&gt;这两个方法是找到可读区域配套使用的，在进行读操作时，调用前面的方法给读加锁，读取完毕之后，释放调该锁。&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=14;fontColor=#000033;" parent="1" vertex="1">
           <mxGeometry x="839" y="-929" width="449" height="159" as="geometry" />
-        </mxCell>
-        <mxCell id="EcqgWQ-e6KK3-O6DXlR8-91" value="" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontSize=16;fontColor=#FF3333;" vertex="1" parent="1">
-          <mxGeometry x="1003.5" y="-640.5" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -198,7 +192,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NsWBkP-mdBoUrU_0fpo0-1" value="&lt;h1&gt;20220612&lt;/h1&gt;&lt;p&gt;1.消息是如何被处理的，回调，若回调函数处理时间过长，会不会影响下一个消息的处理，需要梳理明白&lt;/p&gt;&lt;p&gt;1.是一个topic对应一个Notifier，还是说共用，而后续就是协程处理了&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=15;fontColor=#FF3333;" vertex="1" parent="1">
+        <mxCell id="NsWBkP-mdBoUrU_0fpo0-1" value="&lt;h1&gt;20220612&lt;/h1&gt;&lt;p&gt;1.消息是如何被处理的，回调，若回调函数处理时间过长，会不会影响下一个消息的处理，需要梳理明白&lt;/p&gt;&lt;p&gt;2.是一个topic对应一个Notifier，还是说共用，而后续就是协程处理了&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=15;fontColor=#FF3333;" parent="1" vertex="1">
           <mxGeometry x="850" y="-1150" width="400" height="250" as="geometry" />
         </mxCell>
       </root>
