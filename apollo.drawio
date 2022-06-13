@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-12T14:40:30.014Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="hNrggdvLC6DF4JCwJznx" version="20.0.0" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-06-13T00:34:55.775Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="TyznXIib8C_5WPiR-vUC" version="20.0.0" type="github" pages="6">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -369,103 +369,160 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rbaBevTcMlmIdGO14J8z" name="涟钢车端软件图片">
-    <mxGraphModel dx="1355" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="934" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-1" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;数据采集模块&lt;br style=&quot;&quot;&gt;1.车端软件与自动驾驶软件基于cyber架构进行通信，使用protobuf作为数据传输格式。车端软件依据云端需要上报的信息订阅相应的Topic，每个topic都会有相对应的protobuf格式。为了统一接口，在订阅topic时，统一使用rawmessage，在收到数据后，再依据topic名，将rawmessage转换为对应protobuf对象；&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;2.topic对应的protobuf会包含很多数据，比喻&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;FLAGS_chassis_topic，该topic对应的是底盘数据chassis，里面会包含整个底盘数据的信息，所以需过滤掉无用数据，再存储到数据缓冲队列中；&lt;br&gt;&lt;br&gt;3.程序使用ini配置文件来配置需要提取的数据，后续修改需要获取的数据，只需要修改该配置文件，而不用修改代码&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;font color=&quot;#ff3333&quot;&gt;补充云端需要车端上报哪些数据的图及一个总图，描述整个系统的结构的图&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-1" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;数据采集模块&lt;br style=&quot;&quot;&gt;1.车端软件与自动驾驶软件基于cyber架构进行通信，使用protobuf作为数据传输格式。车端软件依据云端需要上报的信息订阅相应的Topic，每个topic都会有相对应的protobuf格式。为了统一接口，在订阅topic时，统一使用rawmessage，在收到数据后，再依据topic名，将rawmessage转换为对应protobuf对象；&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;2.topic对应的protobuf会包含很多数据，比喻&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;FLAGS_chassis_topic，该topic对应的是底盘数据chassis，里面会包含整个底盘数据的信息，所以需过滤掉无用数据，再存储到数据缓冲队列中；&lt;br&gt;&lt;br&gt;3.程序使用ini配置文件来配置需要提取的数据，后续修改需要获取的数据，只需要修改该配置文件，而不用修改代码&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;font color=&quot;#ff3333&quot;&gt;补充云端需要车端上报哪些数据的图及一个总图，描述整个系统的结构的图&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="31" width="920" height="159" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-2" value="Reader节点" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-2" value="Reader节点" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="200" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QCAaNkC9AgMrjsYHkS20-3" target="QCAaNkC9AgMrjsYHkS20-6">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="QCAaNkC9AgMrjsYHkS20-3" target="QCAaNkC9AgMrjsYHkS20-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-3" value="数据转换为相应protobuf格式数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-3" value="数据转换为相应protobuf格式数据" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="200" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="QCAaNkC9AgMrjsYHkS20-3">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="QCAaNkC9AgMrjsYHkS20-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="210" y="231" as="sourcePoint" />
             <mxPoint x="260" y="181" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-5" value="rawmessage" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-5" value="rawmessage" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="230" y="200" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QCAaNkC9AgMrjsYHkS20-6">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="QCAaNkC9AgMrjsYHkS20-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="700" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-6" value="依据云端需要的数据，将protobuf其他数据去除掉" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-6" value="依据云端需要的数据，将protobuf其他数据去除掉" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="200" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-12" value="压入数据发送缓冲区" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-12" value="压入数据发送缓冲区" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="200" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-16" value="[header]&#xa;optional double timestamp_sec = 1;&#xa;optional uint32 sequence_num = 3;&#xa;&#xa;&#xa;&#xa;&#xa;[planning]&#xa;optional apollo.common.Header header msg = 1;&#xa;optional UnloadStatus unload_status = 33; &#xa;optional bool is_keep_box_leaving = 34;&#xa;optional EStop estop msg = 6;			 &#xa;optional TrajectoryType trajectory_type = 21; &#xa;repeated apollo.common.TrajectoryPoint trajectory_point msg = 12;" style="text;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-16" value="[header]&#xa;optional double timestamp_sec = 1;&#xa;optional uint32 sequence_num = 3;&#xa;&#xa;&#xa;&#xa;&#xa;[planning]&#xa;optional apollo.common.Header header msg = 1;&#xa;optional UnloadStatus unload_status = 33; &#xa;optional bool is_keep_box_leaving = 34;&#xa;optional EStop estop msg = 6;    &#xa;optional TrajectoryType trajectory_type = 21; &#xa;repeated apollo.common.TrajectoryPoint trajectory_point msg = 12;" style="text;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="240" y="320" width="400" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-17" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;数据上报模块&lt;br style=&quot;&quot;&gt;1.使用Mqtt与云端进行通信；&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;2.&lt;/font&gt;&lt;/span&gt;将数据采集模块采集到的数据，按照云端上报要求，打包成相应的Json格式；&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;3.自动驾驶系统产生数据的时间间隔一般是10ms，而若按照这个频率上报，会导致很多无用数据。依据云端上报要求，对于监控类数据，则一秒钟上报三个，而对于状态类数据，发生了变化则立马上报；按照这个要求，对数据发送进行相应的操作；&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-17" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;数据上报模块&lt;br style=&quot;&quot;&gt;1.使用Mqtt与云端进行通信；&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;2.&lt;/font&gt;&lt;/span&gt;将数据采集模块采集到的数据，按照云端上报要求，打包成相应的Json格式；&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;3.自动驾驶系统产生数据的时间间隔一般是10ms，而若按照这个频率上报，会导致很多无用数据。依据云端上报要求，对于监控类数据，则一秒钟上报三个，而对于状态类数据，发生了变化则立马上报；按照这个要求，对数据发送进行相应的操作；&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="41" y="560" width="920" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="1" source="QCAaNkC9AgMrjsYHkS20-18" target="QCAaNkC9AgMrjsYHkS20-22">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="QCAaNkC9AgMrjsYHkS20-18" target="QCAaNkC9AgMrjsYHkS20-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-18" value="数据缓冲队列" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-18" value="数据缓冲队列" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="75" y="775" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="QCAaNkC9AgMrjsYHkS20-22" target="QCAaNkC9AgMrjsYHkS20-24">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" parent="1" source="QCAaNkC9AgMrjsYHkS20-22" target="QCAaNkC9AgMrjsYHkS20-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-22" value="数据分类及打包" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-22" value="数据分类及打包" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="300" y="775" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-24" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-24" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="510" y="745" width="20" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;" edge="1" parent="1" source="QCAaNkC9AgMrjsYHkS20-28" target="QCAaNkC9AgMrjsYHkS20-30">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;" parent="1" source="QCAaNkC9AgMrjsYHkS20-28" target="QCAaNkC9AgMrjsYHkS20-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-28" value="监控类数据" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-28" value="监控类数据" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="540" y="715" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-29" value="状态数据" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-29" value="状态数据" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="540" y="835" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-30" value="获取当前时间与上次发送数据时间间隔，大于330ms，则发送并清空缓冲区" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-30" value="获取当前时间与上次发送数据时间间隔，大于330ms，则发送并清空缓冲区" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="720" y="715" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;" edge="1" parent="1" target="QCAaNkC9AgMrjsYHkS20-35">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;" parent="1" target="QCAaNkC9AgMrjsYHkS20-35" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="660" y="865" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-35" value="判断状态是否发生变化，若变化，则上报数据" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-35" value="判断状态是否发生变化，若变化，则上报数据" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="720" y="835" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;数据接收模块&lt;br&gt;&lt;br&gt;1.该模块区分于数据采集模块，该模块用来接收云端下发的指令和其他模块数据；&lt;br&gt;&lt;br&gt;2.定义数据转发模块与自动驾驶系统交互proto及topic，将接收到的json数据转换成对应proto，并发送出去，自动驾驶系统订阅了该topic后就能收到该数据；&lt;br&gt;&lt;br&gt;3 .目前程序已经实现的指令包括启动，停止，装载，卸载，其他模块数据包括直角检测及铁轨信号&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="930" width="920" height="130" as="geometry" />
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;数据接收模块&lt;br&gt;&lt;br&gt;1.该模块区分于数据采集模块，该模块用来接收云端下发的指令和其他模块数据；控制命令由前端app输入，云端下发给车端，使用json格式，目前已实现命令包括：启动，停止，装卸载作业命令。其他模块数据主要是两路铁轨信号灯数据和直角处障碍物检测的数据，数据格式为string，收到数据后，需要先进行解析，提取出信息；&lt;br&gt;&lt;br&gt;&lt;br&gt;2.定义了车端软件与自动驾驶系统交互proto及topic，为了简化proto文件的管理，定义了&lt;/font&gt;&lt;/span&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#000033&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; background-color: rgb(255, 255, 255);&quot;&gt;CloudToVehicleMsg.proto，该proto包括了所有需要转发给自动驾驶系统数据的类型，避免出现并发等问题，按照类别，定义不同topic，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;br&gt;将接收到的json数据转换成对应proto，并发送出去，自动驾驶系统订阅了该topic后就能收到该数据；&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;3 .目前程序已经实现的指令包括启动，停止，装载，卸载，其他模块数据包括直角检测及铁轨信号&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="930" width="920" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-39" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
-          <mxGeometry x="150" y="1050" width="120" height="50" as="geometry" />
+        <mxCell id="YVVVzEaM3CO23ulZmm14-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="QCAaNkC9AgMrjsYHkS20-39" target="YVVVzEaM3CO23ulZmm14-12">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-40" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
-          <mxGeometry x="150" y="1130" width="120" height="50" as="geometry" />
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-39" value="&lt;font color=&quot;#000033&quot;&gt;控制命令(Json)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="605" y="1168.5" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-41" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
-          <mxGeometry x="150" y="1230" width="120" height="50" as="geometry" />
+        <mxCell id="YVVVzEaM3CO23ulZmm14-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="QCAaNkC9AgMrjsYHkS20-40" target="YVVVzEaM3CO23ulZmm14-13">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-43" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
-          <mxGeometry x="354" y="1050" width="120" height="50" as="geometry" />
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-40" value="&lt;font color=&quot;#000033&quot;&gt;铁轨信号(字符串)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="605" y="1279.5" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-44" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
-          <mxGeometry x="354" y="1130" width="120" height="50" as="geometry" />
+        <mxCell id="YVVVzEaM3CO23ulZmm14-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="QCAaNkC9AgMrjsYHkS20-41" target="YVVVzEaM3CO23ulZmm14-14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QCAaNkC9AgMrjsYHkS20-45" value="控制命令" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
-          <mxGeometry x="354" y="1230" width="120" height="50" as="geometry" />
+        <mxCell id="QCAaNkC9AgMrjsYHkS20-41" value="&lt;font color=&quot;#000000&quot;&gt;直角检测&lt;/font&gt;&lt;span style=&quot;color: rgb(0, 0, 51);&quot;&gt;(字符串)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="605" y="1408.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-7" value="云端" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="41" y="1265" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000033;" edge="1" parent="1" source="YVVVzEaM3CO23ulZmm14-8" target="QCAaNkC9AgMrjsYHkS20-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-8" value="车端" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="356" y="1274" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="YVVVzEaM3CO23ulZmm14-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="148" y="1306" as="sourcePoint" />
+            <mxPoint x="198" y="1256" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-10" value="mqtt" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1269.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-12" value="&lt;font color=&quot;#000033&quot;&gt;MovementMsg&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1168.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000033;" edge="1" parent="1" source="YVVVzEaM3CO23ulZmm14-13" target="YVVVzEaM3CO23ulZmm14-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-13" value="&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font color=&quot;#000033&quot;&gt;TrafficLightInRail&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="859" y="1279.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-14" value="&lt;pre style=&quot;color: rgb(0, 0, 0); font-size: medium; text-align: start; margin-top: 0px; margin-bottom: 0px;&quot;&gt;Perception&lt;/pre&gt;&lt;pre style=&quot;color: rgb(0, 0, 0); font-size: medium; text-align: start; margin-top: 0px; margin-bottom: 0px;&quot;&gt;Obstacle&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1408.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-24" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000033;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="475" y="1306.5" as="sourcePoint" />
+            <mxPoint x="605" y="1190.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-28" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000033;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="QCAaNkC9AgMrjsYHkS20-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="476" y="1307.5" as="sourcePoint" />
+            <mxPoint x="526" y="1257.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-30" value="自动驾驶系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1121" y="1275" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-32" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000033;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="YVVVzEaM3CO23ulZmm14-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="979" y="1196" as="sourcePoint" />
+            <mxPoint x="1029" y="1146" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YVVVzEaM3CO23ulZmm14-35" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000033;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="980" y="1439" as="sourcePoint" />
+            <mxPoint x="1120" y="1309" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
