@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-14T11:19:59.635Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="VWmEY7g4YjutuhZhu6lx" version="20.0.1" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2022-06-14T11:20:44.423Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="R7ikBsCcuP2oERjqkIAD" version="20.0.1" type="github" pages="8">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -786,7 +786,7 @@
         <mxCell id="gFC5vA9glUReS8lKsx3M-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="gFC5vA9glUReS8lKsx3M-1" target="gFC5vA9glUReS8lKsx3M-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="gFC5vA9glUReS8lKsx3M-1" value="依据topic&lt;br&gt;创建Reader节点" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="gFC5vA9glUReS8lKsx3M-1" value="依据节信息(topic)&lt;br&gt;创建Reader节点" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="gFC5vA9glUReS8lKsx3M-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="gFC5vA9glUReS8lKsx3M-3" target="gFC5vA9glUReS8lKsx3M-12" edge="1">
