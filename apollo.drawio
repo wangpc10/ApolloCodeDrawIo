@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-14T11:16:42.391Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="Y2rvGRyEni58JWm9-PgJ" version="20.0.1" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2022-06-14T11:19:59.635Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="VWmEY7g4YjutuhZhu6lx" version="20.0.1" type="github" pages="8">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -815,8 +815,20 @@
         <mxCell id="gFC5vA9glUReS8lKsx3M-9" value="读取本地Ini配置文件" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="80" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="gFC5vA9glUReS8lKsx3M-12" value="依据消息topic，获取数据类型" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="eJ0Al2SFTb8ur8kSQcXk-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gFC5vA9glUReS8lKsx3M-12" target="eJ0Al2SFTb8ur8kSQcXk-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gFC5vA9glUReS8lKsx3M-12" value="依据消息topic，获取数据类型，将rawmessage转换为该数据类型的对象" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eJ0Al2SFTb8ur8kSQcXk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eJ0Al2SFTb8ur8kSQcXk-1" target="eJ0Al2SFTb8ur8kSQcXk-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eJ0Al2SFTb8ur8kSQcXk-1" value="依据配置文件，对消息进行过滤" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eJ0Al2SFTb8ur8kSQcXk-3" value="将数据对象压入待发送队列" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="690" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
