@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-02T02:19:01.598Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="3abq8ka4onzvCfFje6d4" version="20.2.7" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2023-03-14T03:29:55.865Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="E98K6TGSipnAScmN9tqX" version="20.5.1" type="github" pages="9">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
-    <mxGraphModel dx="1662" dy="2001" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -217,7 +217,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="snSFzusARLYtJxmLJe7D" name="读写流程">
-    <mxGraphModel dx="4076" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3903" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -324,7 +324,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="H_0qI-0HGgVUFWgyhjd_" name="读写节点初始化">
-    <mxGraphModel dx="2489" dy="3170" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="3138" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -548,7 +548,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gxLHigO050jun1_bPMUN" name="信号槽机制">
-    <mxGraphModel dx="1355" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -556,7 +556,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BuPBgejb54jkD7pTJm3I" name="待完成任务">
-    <mxGraphModel dx="528" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="595" dy="1969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -567,7 +567,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rbaBevTcMlmIdGO14J8z" name="涟钢车端软件图片">
-    <mxGraphModel dx="1355" dy="1974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -756,7 +756,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="7k7RawbI97psCqamQY6c" name="消息处理函数绑定流程">
-    <mxGraphModel dx="1355" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -774,6 +774,17 @@
         </mxCell>
         <mxCell id="ItdgJZMfSXVGMmGFA6Pj-1" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 15.4px; line-height: 20px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;transport&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;Transport&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;Instance&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;()-&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;CreateReceiver&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;MessageT&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;gt;(&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;role_attr&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;, [](&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;std&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;shared_ptr&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;MessageT&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;msg&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;                          &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;transport&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;MessageInfo&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;msg_info&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;                          &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;proto&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;RoleAttributes&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;reader_attr&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;              (&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;msg_info&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;              (&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;reader_attr&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;              &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;PerfEventCache&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;Instance&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;()-&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;AddTransportEvent&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;                  &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;TransPerf&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;DISPATCH&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;reader_attr&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;channel_id&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(),&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;                  &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;msg_info&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;seq_num&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;());&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;              &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;data&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;DataDispatcher&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;MessageT&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;&amp;gt;::&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;Instance&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;()-&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;Dispatch&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;                  &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;reader_attr&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;channel_id&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(), &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;msg&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;              &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;PerfEventCache&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;Instance&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;()-&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;AddTransportEvent&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;                  &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;TransPerf&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;NOTIFY&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;reader_attr&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;channel_id&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(),&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;                  &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;msg_info&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;seq_num&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;());&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;            });&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontSize=14;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1510" y="110" width="460" height="320" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pQSe-HihA-6-2LLFMhsc" name="Receiver">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nr76GbvAjAM07i_McMxh-1" value="&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; line-height: 20px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font color=&quot;#000033&quot; style=&quot;font-size: 36px;&quot;&gt;CreateReceiver&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="40" width="360" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -829,17 +840,6 @@
         </mxCell>
         <mxCell id="eJ0Al2SFTb8ur8kSQcXk-3" value="将数据对象压入待发送队列" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="90" y="690" width="120" height="60" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="pQSe-HihA-6-2LLFMhsc" name="Receiver">
-    <mxGraphModel dx="1355" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="nr76GbvAjAM07i_McMxh-1" value="&lt;div style=&quot;font-family: &amp;quot;Operator Mono&amp;quot;, &amp;quot;Dank Mono&amp;quot;, &amp;quot;Fira Code Light&amp;quot;, &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; line-height: 20px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font color=&quot;#000033&quot; style=&quot;font-size: 36px;&quot;&gt;CreateReceiver&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="40" width="360" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
