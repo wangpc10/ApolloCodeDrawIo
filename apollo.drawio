@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-26T03:45:31.794Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="L71CyAT0-MsBlU6Jeqdg" version="21.6.5" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2023-07-26T06:00:48.500Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="I7uoCA68RN3i30IuSNhE" version="21.6.5" type="github" pages="10">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="1434" dy="1971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -899,6 +899,9 @@
         </mxCell>
         <mxCell id="oC0scchzYY5_Q-uINMxw-15" value="&lt;h1&gt;RenderableMessage&lt;br&gt;&lt;/h1&gt;&lt;p&gt;该类描述了cursor窗口的属性，包括单页item数目，页数，行号等信息&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="580" y="23" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oC0scchzYY5_Q-uINMxw-16" value="&lt;h1&gt;GeneralMessageBase&lt;br&gt;&lt;/h1&gt;&lt;p&gt;该类描述消息如何生成到screen中&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="360" width="250" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
