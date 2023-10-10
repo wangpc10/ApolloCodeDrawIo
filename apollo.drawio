@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-10T01:46:29.887Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="n9JfDytjSzAU0nJOwbXb" version="22.0.4" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-10-10T01:49:11.508Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="uyD85eu7ILcql8g-jZmO" version="22.0.4" type="github" pages="12">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="2074" dy="2331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -978,11 +978,17 @@
         <mxCell id="CcvT6Zien8J41ZQYxnwV-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9kpXFz6g36ZICAP-KDu7-2" target="CcvT6Zien8J41ZQYxnwV-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="CcvT6Zien8J41ZQYxnwV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="9kpXFz6g36ZICAP-KDu7-2" target="CcvT6Zien8J41ZQYxnwV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="9kpXFz6g36ZICAP-KDu7-2" value="&lt;h1&gt;CreateReader&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;作用:创建一个订阅器，订阅某个通道的消息，收到消息后，会触发回调函数调用；&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;输入参数:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;方式1:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;const std::string&amp;amp; channel_name:通道名字&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;const CallbackFunc&amp;lt;MessageT&amp;gt;&amp;amp; reader_func接收到消息触发的回调函数.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;方式2:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;const ReaderConfig&amp;amp; config,使用config配置topic等参数;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;const CallbackFunc&amp;lt;MessageT&amp;gt;&amp;amp; reader_func接收到消息触发的回调函数.&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="120" width="320" height="380" as="geometry" />
         </mxCell>
         <mxCell id="CcvT6Zien8J41ZQYxnwV-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;1.ReaderConfig里可以配置各种参数，比如reliability等参数，但这个参数对于使用内存共享这种方式却是无意义的;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="40" y="560" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CcvT6Zien8J41ZQYxnwV-3" value="&lt;h1&gt;Reader::Init&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;作用:调用初始化接口，创建协程等对象；&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;输入参数:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;方式1:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;const std::string&amp;amp; channel_name:通道名字&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;const CallbackFunc&amp;lt;MessageT&amp;gt;&amp;amp; reader_func接收到消息触发的回调函数.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;方式2:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;const ReaderConfig&amp;amp; config,使用config配置topic等参数;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;const CallbackFunc&amp;lt;MessageT&amp;gt;&amp;amp; reader_func接收到消息触发的回调函数.&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="120" width="320" height="380" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
