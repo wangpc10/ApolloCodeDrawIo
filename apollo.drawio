@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-10T02:14:12.998Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="EmiEAMzTKvoG3zoUquzb" version="22.0.4" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-10-10T02:16:13.649Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="0-HyYdgU4EcAnBfllJYW" version="22.0.4" type="github" pages="12">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="2074" dy="2331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1026,7 +1026,7 @@
         <mxCell id="CcvT6Zien8J41ZQYxnwV-19" value="G 指的是goroutine，协程，也就是上述一个线程分半后用户状态下的线程;&#xa;&#xa;P 指的是processor，用于处理执行goroutine，包含了每一个goroutine所需要的上下文环境。每个P维护了一个本地队列，存放当前P即将要执行的goroutine，此外还有一个全局队列，用于存放等待运行的goroutine。每个P的本地队列有数量限制，一般不超过256G，新建一个goroutine的时候，优先放到P的本地队列中，如果队列满了，才会尝试放到全局队列中。P的数量可以通过GOMAXPROCS()来设置，它代表了真正的并发度，即有多少个goroutine可以同时运行;&#xa;&#xa;M 指的是Machine，物理线程，也就是上述一个线程分半后内核状态下的线程。" style="text;whiteSpace=wrap;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="10" y="1252" width="750" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="CcvT6Zien8J41ZQYxnwV-20" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;1.G是协程的意思，从上面的笔记可以看出，调用CreateReader时，最终会创建一个协程对象；&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="CcvT6Zien8J41ZQYxnwV-20" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;1.G是协程的意思，从上面的笔记可以看出，调用CreateReader时，最终会创建一个协程对象；&lt;br&gt;2.P在CyberRt里定义了一个Processor类型以及一个ProcessContext类型，在初始化Processor类型时，会调用BindContext接口，该接口传入参数是ProcessorContext对象，同时会创建物理线程M。&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="10" y="1520" width="750" height="80" as="geometry" />
         </mxCell>
       </root>
