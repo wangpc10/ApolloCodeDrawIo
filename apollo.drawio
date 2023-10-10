@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-10T01:54:54.843Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="PsUsFTcmz3X9mBBsWiR9" version="22.0.4" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-10-10T01:55:17.924Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="uMAwhH9Xk2k3XYjRlevM" version="22.0.4" type="github" pages="12">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="2074" dy="2331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1016,6 +1016,9 @@
         </mxCell>
         <mxCell id="CcvT6Zien8J41ZQYxnwV-17" value="&lt;b&gt;将协程对象作为参数，创建任务，待协程进行处理&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="464" y="980" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CcvT6Zien8J41ZQYxnwV-18" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;协成GPM模型&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1160" width="280" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
