@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-10T06:55:09.836Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="5p2CAoxGxHpMeykeRcGX" version="22.0.4" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-10-10T06:55:29.099Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="PtqS4JzUMlorSNUHI_ws" version="22.0.4" type="github" pages="12">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="2074" dy="2331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1094,6 +1094,9 @@
           <mxGeometry x="3133" y="668" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="CcvT6Zien8J41ZQYxnwV-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.524;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="CcvT6Zien8J41ZQYxnwV-34" target="CcvT6Zien8J41ZQYxnwV-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CcvT6Zien8J41ZQYxnwV-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CcvT6Zien8J41ZQYxnwV-44" target="CcvT6Zien8J41ZQYxnwV-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CcvT6Zien8J41ZQYxnwV-44" value="&lt;h1&gt;DataVisitor类型介绍(创建缓存空间和消息通知器)&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;DataVisitor是个模板类，可有1到4个类型参数，如果是大于1，会需要同时读到两个数据才可返回，可后面查看Component类进行熟悉。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 17px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;1.会根据消息类型以及queue_size的大小，创建buffer_，buffer_会绑定通道ID和申请到的内存地址;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 17px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;2.创建完成后，将buffer_对象压入DataDispatcher内，后面接收到消息后，会调用DataDispatcher进行分发，即从共享内存那拷贝到buffer_里;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;3.完成2这个步骤后，需要生成通知，通知协程那边取消息进行处理，所以在创建DataVisitor时，同时会为该channelID绑定notifier_&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;4.不管是哪个channelId，data_notifier_和notifier_都是相同的，只是绑定callBack不一样&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
