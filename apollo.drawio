@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-11T01:56:21.913Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="OwF_wGBu35N1JXpeZnSZ" version="22.0.4" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-10-11T02:09:46.485Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="xfnjdIwAU91wSjHnbNDg" version="22.0.4" type="github" pages="12">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="2074" dy="2331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -340,6 +340,9 @@
         </mxCell>
         <mxCell id="L4i1suR2_dP58yZ1LrSn-6" value="&lt;h1&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Writer::OnChannelChange&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;作用：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;1.该方法关注有哪些Reader离开或者加入了局域网，加入和离开对方发送的是广播消息，收到这个消息后，先判断channel_name是否一样，若不一样，则直接返回;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2.若通道名与创建writer时使用名一致，则判断是离开还是加入，前者调用Enable，后者调用Disable&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;fontColor=#000033;" vertex="1" parent="1">
           <mxGeometry x="-1250" y="1670" width="260" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="3c9r9yNQBMv9sojZt6JX-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;1.每个Writer对象内部会有一个transmitter_成员，这个成员最多会包含SAME_PROC，DIFF_PROC和DIFF_HOST三种类型的Transmitter，Writer没法通过topic来确定使用哪种传输方式，必须通过订阅端有哪些，来使用不同的传输方式。&lt;br&gt;&lt;br&gt;2.如果没有订阅端，在传递数据时，会直接返回；&lt;br&gt;&lt;br&gt;3.由于订阅Writer的topic的Reader在实时变化，所以每个Writer的transmitter_也需要实时变化，这就是上面OnChannelChange作用所在；&lt;br&gt;&lt;br&gt;4.底层交互node信息，Writer信息，Reader信息默认使用的是Rtps协议，通过该协议可以交互局域网内node，Reader/Writer等信息。&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-1280" y="2090" width="320" height="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
