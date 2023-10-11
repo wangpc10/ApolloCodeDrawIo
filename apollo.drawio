@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-11T02:18:53.352Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="gf63tYa3ww5niqTqgYDN" version="22.0.4" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-10-11T02:21:48.415Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="yGAQgzfq7eqGbR78f-84" version="22.0.4" type="github" pages="12">
   <diagram id="fiIldqgvTj8RD8d2yoW4" name="内存管理">
     <mxGraphModel dx="2074" dy="2331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -343,6 +343,9 @@
         <mxCell id="3c9r9yNQBMv9sojZt6JX-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="L4i1suR2_dP58yZ1LrSn-6" target="3c9r9yNQBMv9sojZt6JX-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="3c9r9yNQBMv9sojZt6JX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="L4i1suR2_dP58yZ1LrSn-6" target="3c9r9yNQBMv9sojZt6JX-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="L4i1suR2_dP58yZ1LrSn-6" value="&lt;h1&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Writer::OnChannelChange&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;作用：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;1.该方法关注有哪些Reader离开或者加入了局域网，加入和离开对方发送的是广播消息，收到这个消息后，先判断channel_name是否一样，若不一样，则直接返回;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2.若通道名与创建writer时使用名一致，则判断是离开还是加入，前者调用Enable，后者调用Disable&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;fontColor=#000033;" vertex="1" parent="1">
           <mxGeometry x="-960" y="1670" width="260" height="340" as="geometry" />
         </mxCell>
@@ -360,6 +363,9 @@
         </mxCell>
         <mxCell id="3c9r9yNQBMv9sojZt6JX-7" value="&lt;h1&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Writer::Init&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;作用：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;1.创建Writer后，会调用Init方法用来初始化，初始化内部会创建Transmitter；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2.另一个就是调用JoinTheTopology接口&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;fontColor=#000033;" vertex="1" parent="1">
           <mxGeometry x="-2490" y="1729" width="310" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="3c9r9yNQBMv9sojZt6JX-8" value="&lt;h1&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Writer::Write&lt;/font&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;作用：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;1.调用接口，将MessageT类型消息发送出去；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2.发送消息，会调用transmitter_的Transmit接口，而该接口内部会依据不同类型Transmitter调用不同的接口&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;labelBackgroundColor=none;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="1670" width="260" height="340" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
